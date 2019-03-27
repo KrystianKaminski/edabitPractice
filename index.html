@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Missing third angle</title>
+    <title>Checking even numbers</title>
 </head>
 
 <body>
     <script>
-        const missingAngle = (val1, val2) => {
-            const sum = val1 + val2
-            if (sum < 90) return 'acute'
-            if (sum === 90) return 'right'
-            if (sum > 90 && sum < 180) return 'obtuse'
+        const checkAllEven = arr => {
+            return arr.every((x) => x % 2 === 0)
         }
     </script>
 </body>
