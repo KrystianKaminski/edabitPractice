@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Truthy of falsy?</title>
+    <title>Count the arguments</title>
 </head>
 
 <body>
     <script>
-        const isTruthy = value => {
-            const result = Boolean(value)
-            if (result === true) return 1
-            if (result === false) return 0
+        const numArgs = (...arguments) => {
+            return arguments.length
         }
     </script>
 </body>
