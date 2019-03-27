@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Concatenate first an last name into one string</title>
+    <title>Truthy of falsy?</title>
 </head>
 
 <body>
     <script>
-        const concatName = (first, last) => {
-            return `${last}, ${first}`
+        const isTruthy = value => {
+            const result = Boolean(value)
+            if (result === true) return 1
+            if (result === false) return 0
         }
     </script>
 </body>
