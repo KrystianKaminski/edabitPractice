@@ -5,18 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Is the word singular or plural?</title>
+    <title>Semantic versioning</title>
 </head>
 
 <body>
     <script>
-        const isPlural = str => {
-            if (str.endsWith('s')) {
-                return true
-            } else {
-                return false
-            }
-        }
+        const retrieveMajor = (str) => str.split('.')[0]
+        const retrieveMinor = (str) => str.split('.')[1]
+        const retrievePatch = (str) => str.split('.')[2]
     </script>
 </body>
 
