@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Return the remainder from two numbers</title>
+    <title>Check string for spaces</title>
 </head>
 
 <body>
     <script>
-        const remainderFromTwoNumbers = (num1, num2) => {
-            return num1 % num2
+        const space = /\s/g
+        const hasSpaces = str => {
+            let result = str.match(space)
+            if (result) {
+                return true
+            } else {
+                return false
+            }
         }
     </script>
 </body>
